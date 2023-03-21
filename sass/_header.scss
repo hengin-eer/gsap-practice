@@ -1,0 +1,37 @@
+@import 'vars';
+
+.header {
+    position: relative;
+
+    &__ttl {
+        top: 5px;
+        left: 30px;
+        position: absolute;
+        font-size: 2rem;
+        color: $theme-100;
+        font-family: $changa;
+
+        @include mq(tab) {
+            font-size: 1.7rem;
+        }
+    }
+
+    &__hum {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 30px;
+        width: 30px;
+
+        span {
+            height: 2px;
+            width: 100%;
+            background: $theme-100;
+            border-radius: 2px;
+        }
+    }
+}

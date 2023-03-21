@@ -1,0 +1,37 @@
+{
+  "name": "animation-demo",
+  "version": "1.0.0",
+  "description": "animation practice demo site",
+  "main": "/js/index.js",
+  "scripts": {
+    "dev": "npx webpack-dev-server",
+    "build": "npx webpack",
+    "watch": "npx webpack --watch",
+    "test": "npm test",
+    "sass": "sass --watch sass:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hengin-eer/animation-practice.git"
+  },
+  "keywords": [
+    "animation"
+  ],
+  "author": "hengineer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hengin-eer/animation-practice/issues"
+  },
+  "homepage": "https://github.com/hengin-eer/animation-practice#readme",
+  "dependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "gsap": "^3.11.5",
+    "sass": "^1.59.3",
+    "scrollmagic": "^2.0.8",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  }
+}

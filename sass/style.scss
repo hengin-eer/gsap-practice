@@ -1,0 +1,64 @@
+@use 'header';
+@import 'vars';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    height: 200vh;
+    overflow: hidden;
+    background: white;
+
+    &.active {
+        overflow-y: scroll;
+    }
+
+    .hero {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+
+        div[class*="hero__block"] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
+        }
+
+        &__block {
+            &1 {
+                width: 100vw;
+                background: $theme-100;
+                z-index: -4;
+            }
+
+            &2 {
+                width: 85vw;
+                background: $theme-200;
+                z-index: -3;
+                clip-path: polygon(200px 0%, 100% 0, 100% 100%, 0% 100%);
+            }
+
+            &3 {
+                width: 55vw;
+                background: $theme-300;
+                z-index: -2;
+                clip-path: polygon(200px 0%, 100% 0, 100% 100%, 0% 100%);
+            }
+
+            &4{
+                width: 35vw;
+                background: $theme-400;
+                z-index: -1;
+                clip-path: polygon(200px 0%, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+    }
+}
