@@ -61,4 +61,63 @@ body {
             }
         }
     }
+
+    .garally {
+        // height: 100vh;
+        width: 100vw;
+        padding: 30px;
+        background: $theme-100;
+
+        &__ttl {
+            font-size: 4rem;
+            color: $theme-200;
+            font-family: $changa;
+            text-align: center;
+            padding-block: 50px;
+        }
+
+        section {
+            padding: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+
+            >img {
+                width: 30vw;
+            }
+
+            .desc {
+                &__ttl {
+                    font-size: 4rem;
+                    color: $theme-400;
+                    font-family: $changa;
+                }
+
+                &__sentences {
+                    font-size: 1.5rem;
+                    color: $theme-300;
+                    font-family: $changa;
+                    line-height: 2;
+                }
+            }
+        }
+
+        .colo-colo {
+            margin: 0 auto;
+
+            >img {
+                display: block;
+                width: 30vw;
+                margin: 0 auto;
+            }
+
+            >p {
+                font-size: 1.5rem;
+                color: $theme-200;
+                font-family: $changa;
+                text-align: center;
+            }
+        }
+    }
 }
