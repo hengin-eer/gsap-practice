@@ -18,8 +18,9 @@ gsap.registerPlugin(ScrollTrigger)
 gsap.from('.rabit1', {
     scrollTrigger: {
         trigger: '.rabit1',
-        start: 'top 75%',
-        toggleActions: 'restart none none none'
+        start: 'center bottom',
+        // toggleActions: "restart none none none",
+        once: true,
     },
     duration: 1.5,
     x: -100,
@@ -30,8 +31,8 @@ gsap.from('.rabit1', {
 gsap.from('.rabit2', {
     scrollTrigger: {
         trigger: '.rabit2',
-        start: 'top 75%',
-        toggleActions: 'restart none none none'
+        start: 'center bottom',
+        once: true,
     },
     duration: 1.5,
     x: 100,

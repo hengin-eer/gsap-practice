@@ -168,14 +168,29 @@ body .garally__ttl {
   padding-block: 50px;
 }
 body .garally section {
-  padding: 100px;
+  padding-block: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
 }
+@media screen and (max-width: 768px) {
+  body .garally section {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .garally section.section__prya {
+    flex-direction: column-reverse;
+  }
+}
 body .garally section > img {
   width: 30vw;
+}
+@media screen and (max-width: 768px) {
+  body .garally section > img {
+    width: 100%;
+  }
 }
 body .garally section .desc__ttl {
   font-size: 4rem;
@@ -195,6 +210,11 @@ body .garally .colo-colo > img {
   display: block;
   width: 30vw;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  body .garally .colo-colo > img {
+    width: 80%;
+  }
 }
 body .garally .colo-colo > p {
   font-size: 1.5rem;
