@@ -1,5 +1,5 @@
 @use 'header';
-@import 'vars';
+@use 'vars';
 
 * {
     padding: 0;
@@ -35,27 +35,27 @@ body {
         &__block {
             &1 {
                 width: 100vw;
-                background: $theme-100;
+                background: vars.$theme-100;
                 z-index: -4;
             }
 
             &2 {
                 width: 85vw;
-                background: $theme-200;
+                background: vars.$theme-200;
                 z-index: -3;
                 clip-path: polygon(200px 0%, 100% 0, 100% 100%, 0% 100%);
             }
 
             &3 {
                 width: 55vw;
-                background: $theme-300;
+                background: vars.$theme-300;
                 z-index: -2;
                 clip-path: polygon(200px 0%, 100% 0, 100% 100%, 0% 100%);
             }
 
             &4{
                 width: 35vw;
-                background: $theme-400;
+                background: vars.$theme-400;
                 z-index: -1;
                 clip-path: polygon(200px 0%, 100% 0, 100% 100%, 0% 100%);
             }
@@ -66,12 +66,12 @@ body {
         // height: 100vh;
         width: 100vw;
         padding: 30px;
-        background: $theme-100;
+        background: vars.$theme-100;
 
         &__ttl {
             font-size: 4rem;
-            color: $theme-200;
-            font-family: $changa;
+            color: vars.$theme-200;
+            font-family: vars.$changa;
             text-align: center;
             padding-block: 50px;
         }
@@ -90,14 +90,14 @@ body {
             .desc {
                 &__ttl {
                     font-size: 4rem;
-                    color: $theme-400;
-                    font-family: $changa;
+                    color: vars.$theme-400;
+                    font-family: vars.$changa;
                 }
 
                 &__sentences {
                     font-size: 1.5rem;
-                    color: $theme-300;
-                    font-family: $changa;
+                    color: vars.$theme-300;
+                    font-family: vars.$changa;
                     line-height: 2;
                 }
             }
@@ -114,8 +114,8 @@ body {
 
             >p {
                 font-size: 1.5rem;
-                color: $theme-200;
-                font-family: $changa;
+                color: vars.$theme-200;
+                font-family: vars.$changa;
                 text-align: center;
             }
         }

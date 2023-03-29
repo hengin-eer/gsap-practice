@@ -1,4 +1,4 @@
-@import 'vars';
+@use 'vars';
 
 .header {
     position: relative;
@@ -8,10 +8,10 @@
         left: 30px;
         position: absolute;
         font-size: 2rem;
-        color: $theme-100;
-        font-family: $changa;
+        color: vars.$theme-100;
+        font-family: vars.$changa;
 
-        @include mq(tab) {
+        @include vars.mq(tab) {
             font-size: 1.7rem;
         }
     }
@@ -21,9 +21,9 @@
         top: 50px;
         left: 30px;
         font-size: 1rem;
-        color: $theme-100;
+        color: vars.$theme-100;
         color: white;
-        font-family: $changa;
+        font-family: vars.$changa;
         z-index: 1;
     }
 
@@ -50,7 +50,7 @@
         span {
             height: 2px;
             width: 100%;
-            background: $theme-100;
+            background: vars.$theme-100;
             border-radius: 2px;
         }
     }
