@@ -1,7 +1,7 @@
 import gsap, { Linear, Power4 } from "gsap"
 import { loading } from "./loading"
 import { hero } from "./hero"
-import { humMenu } from "./humMenu"
+import { humMenu, toggleHumNav } from "./humMenu"
 import ScrollTrigger from "gsap/ScrollTrigger"
 
 window.onload = () => {
@@ -68,4 +68,5 @@ let hum = document.querySelector('.header__hum')
 
 hum.addEventListener('click', () => {
     humMenu.restart()
+    toggleHumNav()
 })
