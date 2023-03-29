@@ -40,13 +40,67 @@
   justify-content: space-around;
   height: 30px;
   width: 30px;
-  z-index: 999;
+  z-index: 9999;
+}
+.header__hum.active span {
+  background: white;
 }
 .header__hum span {
   height: 2px;
   width: 100%;
   background: #191825;
   border-radius: 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hum-nav {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #191825;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.hum-nav.active {
+  opacity: 1;
+  visibility: visible;
+}
+.hum-nav ul {
+  list-style: none;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+}
+.hum-nav ul li {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.hum-nav ul li svg {
+  height: 2rem;
+}
+.hum-nav ul li svg.twitter {
+  fill: #1DA1F2;
+}
+.hum-nav ul li svg.github {
+  fill: white;
+}
+.hum-nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Changa";
+  font-weight: bold;
+  color: #865DFF;
+  transition: all 0.3s ease-in-out;
+}
+.hum-nav ul li a:hover {
+  color: #FFA3FD;
 }
 
 * {
